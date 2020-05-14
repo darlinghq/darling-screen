@@ -2,10 +2,6 @@ project(screen)
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -nostdinc")
 
-include_directories(
-	${CMAKE_SOURCE_DIR}/src/launchd/liblaunch
-)
-
 add_darling_executable(screen
 	acls.c
 	ansi.c
