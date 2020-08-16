@@ -2,6 +2,10 @@ project(screen)
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -nostdinc")
 
+add_compile_definitions(
+	RUN_LOGIN
+)
+
 add_darling_executable(screen
 	acls.c
 	ansi.c
